@@ -99,37 +99,66 @@ p {
 
 .testimonios-container {
   margin-top: 4rem;
-}
-
-.testimonios-box {
   background-image: linear-gradient(
       var(--first-alpha50-color),
       var(--first-alpha50-color)
     ),
     var(--hero-image);
-  width: 100vw;
-  height: 50vh;
   background-size: cover;
   position: relative;
 }
 
-.slides {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+.testimonios-box {
+  margin: 1rem auto;
+  padding: 0.5rem auto;
+  max-width: 800px;
+  text-align: center;
+  overflow-x: hidden;
 }
+
+/* Las listas tienen pading left automaticas, por eso para centrarlas hay que aclarar padding-lef 0 
+list-style: none; es para sacar los puntos iniciales de cada lista.*/
+.testimonios-box .slides {
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  width: 600%;
+}
+
 .testimonios-box label {
-  border: medium solid var(--gray-dark-color);
+  border: medium solid var(--third-color);
   border-radius: 50%;
-  margin: 0 0.25rem;
+  margin: 0 0.4rem;
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
   cursor: pointer;
 }
+
+#slide-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide-2:checked ~ .slides {
+  transform: translateX(-16.666666666666%);
+}
+
+#slide-3:checked ~ .slides {
+  transform: translateX(-33.33333333333%);
+}
+
+#slide-4:checked ~ .slides {
+  transform: translateX(-49.999999999999%);
+}
+
+#slide-5:checked ~ .slides {
+  transform: translateX(-66.666666666666%);
+}
+
+#slide-6:checked ~ .slides {
+  transform: translateX(-83.333333333333%);
+}
+
 .testimonios-box input {
   display: none;
 }
@@ -138,16 +167,13 @@ p {
   width: 100px;
   height: 100px;
   object-fit: fill;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 1rem;
   border-radius: 50%;
 }
 
 .slide > blockquote {
   color: var(--second-color);
-  margin-left: 1rem;
-  margin-right: 2rem;
+  margin: auto;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -156,6 +182,15 @@ p {
 .slide > cite {
   color: var(--second-color);
   bottom: 1rem;
+}
+
+#slide-1:checked ~ .slides-nav label#dot-1,
+#slide-2:checked ~ .slides-nav label#dot-2,
+#slide-3:checked ~ .slides-nav label#dot-3,
+#slide-4:checked ~ .slides-nav label#dot-4,
+#slide-5:checked ~ .slides-nav label#dot-5,
+#slide-6:checked ~ .slides-nav label#dot-6 {
+  background-color: var(--second-color);
 }
 
 /**** Hero-Image ****/
