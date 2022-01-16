@@ -105,34 +105,68 @@ p {
     ),
     var(--hero-image);
   background-size: cover;
-  position: relative;
-}
-
-.testimonios-box {
-  margin: 1rem auto;
-  padding: 0.5rem auto;
-  max-width: 800px;
-  text-align: center;
-  overflow-x: hidden;
 }
 
 /* Las listas tienen pading left automaticas, por eso para centrarlas hay que aclarar padding-lef 0 
-list-style: none; es para sacar los puntos iniciales de cada lista.*/
-.testimonios-box .slides {
-  padding-left: 0;
+  list-style: none; es para sacar los puntos iniciales de cada lista.*/
+.slides {
+  padding: 0;
   display: flex;
+  justify-content: center;
   list-style: none;
   width: 600%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
 }
 
 .testimonios-box label {
   border: medium solid var(--third-color);
   border-radius: 50%;
-  margin: 0 0.4rem;
+  margin: 0.5rem 0.4rem;
   display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
   cursor: pointer;
+}
+
+.slides-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonios-box input {
+  display: none;
+}
+
+.slide {
+  width: 100vw;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.slide > img {
+  width: 100px;
+  height: 100px;
+  top: 1rem;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slide > blockquote {
+  color: var(--second-color);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slide > cite {
+  color: var(--second-color);
+}
+
+.testimonios-box {
 }
 
 #slide-1:checked ~ .slides {
@@ -157,31 +191,6 @@ list-style: none; es para sacar los puntos iniciales de cada lista.*/
 
 #slide-6:checked ~ .slides {
   transform: translateX(-83.333333333333%);
-}
-
-.testimonios-box input {
-  display: none;
-}
-
-.slide > img {
-  width: 100px;
-  height: 100px;
-  object-fit: fill;
-  margin-top: 1rem;
-  border-radius: 50%;
-}
-
-.slide > blockquote {
-  color: var(--second-color);
-  margin: auto;
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.slide > cite {
-  color: var(--second-color);
-  bottom: 1rem;
 }
 
 #slide-1:checked ~ .slides-nav label#dot-1,
@@ -623,6 +632,30 @@ nowrap: No se van a ir para abajo, se van a quedar en una sola fila o columna. (
   .nosotros-container {
     margin-left: 10vw;
     margin-right: 10vw;
+  }
+
+  .testimonios-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 60vh;
+  }
+
+  .testimonios-box {
+  }
+
+  .slides {
+  }
+
+  .slide {
+  }
+
+  .slides > img {
+  }
+
+  .slides > blockquote {
+  }
+
+  .slides > cite {
   }
 
   .servicios-container {
