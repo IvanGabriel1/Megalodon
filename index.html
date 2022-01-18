@@ -98,7 +98,7 @@
           que
           se
           desempeñan en la oficina central.
-          <a href="#nos-1" class="text-clean enlace-modal"> Ver mas
+          <a href="#nos-1" class="text-clean enlace-modal"> Leer más
           </a>
         </p>
         <p class="text-nosotros-big">Megalodón se consolida en el año 2021, como un proyecto de equipo el cual tiene al
@@ -125,7 +125,7 @@
           en
           lo que
           sea que nos propusieron.
-          <a href="#nos-2" class="text-clean enlace-modal"> Ver mas
+          <a href="#nos-2" class="text-clean enlace-modal"> Leer más
           </a>
 
         <p class="text-nosotros-big">Queremos ayudar a las personas con esos deseos que nunca pudieron cumplir, ponemos
@@ -151,7 +151,7 @@
           pioneros y lider en el mercado, bajamos linea a nuestros competidores debido a los comentarios de nuestros
           clientes.
           <a href="#nos-3" class="text-clean enlace-modal">
-            Ver mas
+            Leer más
           </a>
 
         <p class="text-nosotros-big">Somos un equipo profesional, muy calificados que se enfocan totalmente a los
@@ -268,7 +268,7 @@
 
 
 
-  <section id="servicios">
+  <section id="servicios" class="section">
 
     <h2 class="section-title">Servicios</h2>
 
@@ -379,8 +379,7 @@
 
 
 
-  <section id="testimonios">
-    <br>
+  <section id="testimonios" class="section">
     <h2 class="section-title">Testimonios</h2>
 
     <article class="testimonios-container" style="--hero-image: url('assets/Hero-image.jpg');">
@@ -412,8 +411,8 @@
 
           <li class="slide">
             <img src="assets/foto-testimonio3.jpg" alt="Foto del tercer testimonio">
-            <blockquote>Boludo! Está buenisima, yo pongo la manos en el fuego por este proyecto, total ya estamos hasta
-              el taco amigo, ya fue loco, te felicito.</blockquote>
+            <blockquote>El servicio es excelente, saluden al caballero oficial del Aconcagua, yo lo super recomiendo,
+              total ya estamos hasta el taco.</blockquote>
             <cite><b>Mariano Avico</b></cite>
           </li>
 
@@ -434,9 +433,9 @@
 
           <li class="slide">
             <img src="assets/foto-testimonio6.jpg" alt="Foto del sexto testimonio">
-            <blockquote>Increible equipo de trabajo, super confiables y profesionales, cumplieron en todo, una venganza
+            <blockquote>Increible! super confiables, cumplieron en todo, una venganza
               exquisita.
-              Felicitaciones por esta innovadora empresa.</blockquote>
+              Felicitaciones por esta innovadora empresa. Consuman todos! la puta que los re pario.</blockquote>
             <cite><b>Iván Braun</b></cite>
           </li>
 
@@ -458,7 +457,7 @@
 
   <br><br>
 
-  <section id="contacto">
+  <section id="contacto" class="section">
 
     <h2 class="section-title">Contacto</h2>
 
@@ -551,13 +550,40 @@
 
     </article>
 
+    <form class="contact-form" action="https://formsubmit.co/ivangabraun@gmail.com" method="POST">
+      <input class="btn-form" type="text" name="name" placeholder="Ingresá tu nombre *"
+        title="Sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+      <input class="btn-form" type="email" name="email" placeholder="Ingresá tu email *" title="Email incorrecto"
+        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+      <textarea name="comments" cols="50" rows="10" placeholder="Dejáme tus comentarios" required></textarea>
+      <input type="submit" class="btn-enviar" value="ENVIAR">
+    </form>
+
+    <article id="Gracias" class="modal">
+      <div class="modal-gracias">
+        <article class="gracias-respuesta">
+          <h3>Gracias!
+            <br>
+            Por tus comentarios
+          </h3>
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 0C4.92339 0 0 4.92339 0 11C0 17.0766 4.92339 22 11 22C17.0766 22 22 17.0766 22 11C22 4.92339 17.0766 0 11 0ZM14.5484 7.45161C15.3335 7.45161 15.9677 8.08589 15.9677 8.87097C15.9677 9.65605 15.3335 10.2903 14.5484 10.2903C13.7633 10.2903 13.129 9.65605 13.129 8.87097C13.129 8.08589 13.7633 7.45161 14.5484 7.45161ZM7.45161 7.45161C8.23669 7.45161 8.87097 8.08589 8.87097 8.87097C8.87097 9.65605 8.23669 10.2903 7.45161 10.2903C6.66653 10.2903 6.03226 9.65605 6.03226 8.87097C6.03226 8.08589 6.66653 7.45161 7.45161 7.45161ZM11 18.8065C8.3121 18.8065 5.03427 17.1077 4.62177 14.6681C4.53306 14.1448 5.03427 13.7101 5.53992 13.8742C6.87944 14.3044 8.87097 14.5484 11 14.5484C13.129 14.5484 15.1206 14.3044 16.4601 13.8742C16.9613 13.7101 17.4625 14.1448 17.3782 14.6681C16.9657 17.1077 13.6879 18.8065 11 18.8065Z"
+              fill="#4F024C" />
+          </svg>
+        </article>
+      </div>
+
+    </article>
+
   </section>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <small>Sitio diseñado por Iván Braun</small>
+  </footer>
 
   <script src="script.js"></script>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>
